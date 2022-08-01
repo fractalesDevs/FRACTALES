@@ -47,7 +47,12 @@ body {
 .cabezal {
     width: 100%;
     height: auto;
-    background-color: #03142b;
+    background: #003a87;
+background: -moz-linear-gradient(top,  #003a87 0%, #0e1a47 65%);
+background: -webkit-linear-gradient(top,  #003a87 0%,#0e1a47 65%);
+background: linear-gradient(to bottom,  #003a87 0%,#0e1a47 65%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003a87', endColorstr='#0e1a47',GradientType=0 );
+
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -649,3 +654,45 @@ footer a {
 }
 
 }
+
+
+/* CSS para animaciones- trancisiones y gradientes */
+.animable {
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+}
+#btn-conocenos:hover{
+    padding: 2% 6%;
+    width: 25%;
+    background-color: #0d1f45;
+}
+
+.btn-verMas:hover {
+    padding: 4% 5%;
+    width: 84%;
+    background-color: #14264b;
+}
+
+#cotizar__link:hover {
+    color: #000000;
+    background-color: #2eb9ff;
+    padding: 2% 6%;
+}
+
+@keyframes pulso {
+    0%{transform:scale(1,1);}
+    100%{transform: scale(1.05,1.05);}
+}
+
+.aplicarPulso {
+    animation-name: pulso;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
