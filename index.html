@@ -11,76 +11,108 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <title>FRACTALES</title>
 </head>
 
 <body>
-    <div class="cont-grid">
+    <div class="cabeza">
+        <header class="cabezal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu">
 
-        <div class="menu">
-            <header class="cabezal">
-                <nav class="cabezal__menu">
-                    <ul class="cabezal__links">
-                        <li class="cabezal__elemento"><a class="cabezal__link" href="pages/quienes.html">Quienes
-                                Somos</a></li>
-                        <li class="cabezal__elemento"><a class="cabezal__link" href="pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="cabezal__elemento"><a class="cabezal__link"
-                                href="pages/portafolio.html">Portafolio</a></li>
-                        <li class="cabezal__elemento"><a class="cabezal__link" href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--Aqui colocamos el logo-->
-                <a class="cabezal__logo" href="index.html"> <img class="cabezal__imgLogo"
-                        src="assets/img/logo.png" /></a>
-            </header>
-        </div>
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="assets/img/logo.png" alt="" width="100" height="auto">
+                                    </a>
+                                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ms-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                    href="pages/quienes.html">Quiénes somos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="pages/portafolio.html">Portafolio</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div><!-- termina row-->
+            </div><!-- termina container-->
+        </header>
+    </div><!-- termina cabeza-->
 
-        <div class="cabeza">
-            <!-- Seccion de introduccion-->
-            <section class="somos">
+
+    <div class="cabeza">
+        <!-- Seccion de introduccion-->
+        <section class="somos">
+            <div class="container-fluid">
                 <!-- imagen de introduccion-->
-                <h1 class="somos__titulo">Quienes somos</h1>
+                <h1 class="somos__titulo">Quienes somos</h1><br>
                 <p class="somos__desc">
                     Aquí se colocaría un párrafo descriptivo del giro de la empresa, quienes la componen, así como la
                     filosofía y valores de la empresa.
                 </p>
                 <a class="btn-verMas--index animable" id="btn-conocenos" href="pages/quienes.html">Conócenos</a>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
-        <div class="cont-cuerpo">
-            <!--Video de reel de trabajos-->
-            <section class="reel">
-                <div id="reel__desc">
-                    <h1 class="titulos">
-                        Mira nuestro trabajo
-                    </h1>
-                    <p>
-                        En el siguiente video podrás ver una muestra del trabajo que realizamos. La experiencia ganada y
-                        el
-                        giro
-                        y
-                        clientes a los que estamos dirigidos.
-                    </p>
-                </div>
-                <div id="reel_video">
-                    <div class="videoResponsivo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6d4slEsw5NE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+    <section class="reel">
+        <div class="container">
+            <dv class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 al-centro">
+                    <div id="reel__desc">
+                        <h1 class="titulos" id="tituloReel">
+                            Mira nuestro trabajo
+                        </h1>
+                        <p>
+                            En el siguiente video podrás ver una muestra del trabajo que realizamos. La experiencia
+                            ganada y el giro y clientes a los que estamos dirigidos.
+                        </p>
                     </div>
                 </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="reel_video">
+                        <div class="videoResponsivo">
+                            <iframe src="https://www.youtube.com/embed/6d4slEsw5NE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </dv>
+        </div>
+    </section><!-- termina reel -->
 
-            </section>
-
-            <!--Aqui van los servicios a ofrecer-->
-            <section id="servicios">
-                <h1 class="titulos">Servicios</h1><br>
-                <div id="servicios__cont">
+    <section id="servicios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="titulos">Servicios</h1><br>
+                </div>
+            </div>
+            <!--termina row -->
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <article class="servicios__recServicio">
                         <img src="assets/img/icono3.jpg" /><br>
                         <h2>Animación de mecanismos de acción</h2>
@@ -89,6 +121,8 @@
                         </p>
                         <a class="btn-verMas animable" href="pages/servicios.html">VER MÁS</a>
                     </article>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <article class="servicios__recServicio">
                         <img src="assets/img/icono2.jpg" /><br>
                         <h2>Modelado de productos</h2>
@@ -97,6 +131,8 @@
                         </p>
                         <a class="btn-verMas animable" href="pages/servicios.html">VER MÁS</a>
                     </article>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <article class="servicios__recServicio">
                         <img src="assets/img/icono1.jpg" /><br>
                         <h2>Ilustración 3D</h2>
@@ -106,38 +142,64 @@
                         <a class="btn-verMas animable" href="pages/servicios.html">VER MÁS</a>
                     </article>
                 </div>
-            </section>
-            <section id="clientes">
-                <h1 class="titulos">Nuestros clientes</h1>
-                <div id="clientes__cont">
-                    <article class="clientes__art">
-                        <img src="assets/img/cliente.jpg" />
-                    </article>
-                    <article class="clientes__art">
-                        <img src="assets/img/cliente.jpg" />
-                    </article>
-                    <article class="clientes__art">
-                        <img src="assets/img/cliente.jpg" />
-                    </article>
-                </div>
-            </section>
-            <!--Aqui pondremos la invitación al formulario-->
-            <section id="cotizar">
-                <h1 class="titulos--blanco">¿Quiéres cotizar un proyecto?</h1>
-                <p>Te invitamos a que nos cuentes de que va tu proyecto. Nosotros nos comunicaremos contigo para darte
-                    las
-                    mejores soluciones a tus requerimientos.</p>
-                <a id="cotizar__link" class="animable" href="pages/contacto.html" target="_self">ENVIAR MAIL</a>
-            </section>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+    </section><!-- termina servicios -->
 
+    <section id="clientes">
+        <div id="clientes__cont">
+            <div class="container">
+                <div class="row">
+                    <h1 class="titulos">Nuestros clientes</h1>
+                </div><!-- termina row -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 centrado">
+                        <article class="clientes__art">
+                            <img class="img-fluid" src="assets/img/cliente.jpg" />
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 centrado">
+                        <article class="clientes__art">
+                            <img class="img-fluid" src="assets/img/cliente.jpg" />
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 centrado">
+                        <article class="clientes__art">
+                            <img class="img-fluid" src="assets/img/cliente.jpg" />
+                        </article>
+                    </div>
+                </div><!-- termina row -->
+            </div><!-- termina container-->
         </div>
+    </section><!-- termina clientes -->
 
-        <div class="pie">
-            <footer>
-                <div id="footer__logo"><img src="assets/img/logo.png" /></div>
-                <div>FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de privacidad</a></div>
-                <div>
-                    <table>
+    <section id="cotizar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--Aqui pondremos la invitación al formulario-->
+                    <h1 class="titulos--blanco">¿Quiéres cotizar un proyecto?</h1>
+                    <p>Te invitamos a que nos cuentes de que va tu proyecto. Nosotros nos comunicaremos contigo para
+                        darte las mejores soluciones a tus requerimientos.</p>
+                    <a id="cotizar__link" class="animable" href="pages/contacto.html" target="_self">ENVIAR MAIL</a>
+                </div>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+
+    </section><!-- termina cotizar -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="footer__logo"><img src="assets/img/logo.png" /></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 centrado">
+                    <div id="legales">FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de
+                            privacidad</a></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 centrado">
+                    <table id="tablaRedes">
                         <tr>
                             <td>
                                 <img class="red" src="assets/img/red1.png" />
@@ -148,14 +210,12 @@
                         </tr>
                     </table>
                 </div>
-            
-            </footer>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+    </footer>
 
-        </div>
 
-<script src="js/bootstrap.min.js">
-
-</script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
