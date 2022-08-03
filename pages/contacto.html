@@ -4,103 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
     <link href="../css/estilos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <title>FRACTALES-contacto</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <title>FRACTALES-Portafolio</title>
 </head>
 
 <body>
-   
-    <div class="menu">
-        <header class="cabezal">
-            <nav class="cabezal__menu">
-                <ul class="cabezal__links">
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="quienes.html">Quienes Somos</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="servicios.html">Servicios</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="portafolio.html">Portafolio</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!--Aqui colocamos el logo-->
-            <a class="cabezal__logo" href="../index.html"> <img class="cabezal__imgLogo" src="../assets/img/logo.png" /></a>
-        </header>
-    </div>
-    
     <div class="cabeza">
-        <!-- imagen de intro -->
-        <section class="imgCabezal--contacto">
-            <h1 class="titulos--blanco">Contacto</h1>
-        </section>
-    </div>
-    
-    <div class="cont-cuerpo">
-      <!--aqui va el formulario -->
-      <section class="cuerpo-cont">
-        
-        <article class="contacto__form">
-            <h3 class="desc-contacto">Puedes consultarnos para contárnos sobre tu proyecto</h3>
-            <form id="contacto__formulario" action="#">
-                <label for="nombre">Nombre:
-                    <input class="contacto__texto" type="text" placeholder="NOMBRE COMPLETO" name="nombre"><br>
-                    <input class="contacto__texto" type="telefono" placeholder="Número Telefónico"><br>
-                    <label for="email">Email:
-                        <input class="contacto__texto" type="email" placeholder="jhonDoe@gmail.com" name="email"><br>
-                    </label>
-                    <label for="Mensaje"> Mensaje:<br>
-                        <textarea class="contacto__texto" placeholder="Mensaje"></textarea>
-                    </label> <br>
+        <header class="cabezal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu">
 
-                    <div class="contacto__sexo">
-                        <p>Sexo:</p>
-                        <div>Hombre
-                            <input type="radio" name="sexo" value="hombre">
-                        </div>
-                        <div>Mujer
-                            <input type="radio" name="sexo" value="mujer">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container">
+                                    <a class="navbar-brand" href="../index.html">
+                                        <img src="../assets/img/logo.png" alt="" width="100" height="auto">
+                                    </a>
+                                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ms-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                    href="quienes.html">Quiénes somos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="servicios.html">Servicios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="portafolio.html">Portafolio</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
-                    <p>¿Qué servicio te interesa?</p>
-                    <select name="servicio" id="servicio">
-                        <option value="animacion">Animación de mecanismos de acción.</option>
-                        <option value="Modelado">Modelado de productos</option>
-                        <option value="Ilustración">Ilustración 3D</option>
-                    </select>
-                    <div>
-                        Queres recibir noticias nuestras?
-                        <input class="contacto__check" type="checkbox" name="acepta" value="1">
-                    </div>
-                    <div id="contacto__btns">
-                    <input class="contacto__btn" type="submit" value="ENVIAR MENSAJE">
-                    <input class="contacto__btn" type="reset" value="RESETEAR">
+                </div><!-- termina row-->
+            </div><!-- termina container-->
+        </header>
+    </div><!-- termina cabeza-->
+
+    <!-- imagen de intro -->
+    <section class="imgCabezal--contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="titulos--blanco">Contacto</h1>
                 </div>
-            </form>
-        </article>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
     </section>
-    </div>
-    
-    <div class="pie">
-        <footer>
-            <div id="footer__logo"><img src="../assets/img/logo.png" /></div>
-            <div>FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de privacidad</a></div>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <img class="red" src="../assets/img/red1.png" />
-                        </td>
-                        <td>
-                            <img class="red" src="../assets/img/red2.png" />
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </footer>
-    </div>
 
+    <div class="container separar">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <article class="contacto__form">
+                    <h3 class="desc-contacto">Puedes consultarnos para contárnos sobre tu proyecto</h3>
+                    <form id="contacto__formulario" action="#">
+                        <label for="nombre">Nombre:
+                            <input class="contacto__texto form-control" type="text" placeholder="Nombre completo" name="nombre"><br>
+                            <input class="contacto__texto" type="telefono" placeholder="Número Telefónico"><br>
+                            <label for="email">Email:
+                                <input class="contacto__texto" type="email" placeholder="jhonDoe@gmail.com" name="email"><br>
+                            </label>
+                            <label for="Mensaje"> Mensaje:
+                                <textarea class="contacto__texto" placeholder="Mensaje"></textarea>
+                            </label>
+                            <div class="contacto__sexo">
+                                <p>Sexo:</p>
+                                <div>Hombre
+                                    <input type="radio" name="sexo" value="hombre">
+                                </div>
+                                <div>Mujer
+                                    <input type="radio" name="sexo" value="mujer">
+                                </div>
+                            </div>
+                            <p>¿Qué servicio te interesa?</p>
+                            <select name="servicio" id="servicio">
+                                <option value="animacion">Animación de mecanismos de acción.</option>
+                                <option value="Modelado">Modelado de productos</option>
+                                <option value="Ilustración">Ilustración 3D</option>
+                            </select>
+                            <div>
+                                Queres recibir noticias nuestras?
+                                <input class="contacto__check" type="checkbox" name="acepta" value="1">
+                            </div>
+                            <div id="contacto__btns">
+                            <input class="contacto__btn" type="submit" value="ENVIAR MENSAJE">
+                            <input class="contacto__btn" type="reset" value="RESETEAR">
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div><!-- termina row -->
+    </div><!-- termina container-->
+
+    <footer class="separar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="footer__logo"><img src="../assets/img/logo.png" /></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 centrado">
+                    <div id="legales">FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de
+                            privacidad</a></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 centrado">
+                    <table id="tablaRedes">
+                        <tr>
+                            <td>
+                                <img class="red" src="../assets/img/red1.png" />
+                            </td>
+                            <td>
+                                <img class="red" src="../assets/img/red2.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -4,183 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
     <link href="../css/estilos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <title>FRACTALES-Portafolio</title>
 </head>
 
 <body>
-  
-    <div class="menu">
-        <header class="cabezal">
-            <nav class="cabezal__menu">
-                <ul class="cabezal__links">
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="quienes.html">Quienes Somos</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="servicios.html">Servicios</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="portafolio.html">Portafolio</a></li>
-                    <li class="cabezal__elemento"><a class="cabezal__link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!--Aqui colocamos el logo-->
-            <a class="cabezal__logo" href="../index.html"> <img class="cabezal__imgLogo" src="../assets/img/logo.png" /></a>
-        </header>
-    </div>
-    
     <div class="cabeza">
-        <!-- imagen de intro -->
-        <section class="imgCabezal--portafolio">
-            <h1 class="titulos--blanco">Portafolio</h1>
-        </section>
-    </div>
-    
-    <div class="cont-cuerpo">
-        <section class="cuerpo-cont">
-            <div class="trabajos">
-                <article class="trabajo">
+        <header class="cabezal">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu">
+
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container">
+                                    <a class="navbar-brand" href="../index.html">
+                                        <img src="../assets/img/logo.png" alt="" width="100" height="auto">
+                                    </a>
+                                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNav">
+                                        <ul class="navbar-nav ms-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page"
+                                                    href="quienes.html">Quiénes somos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="servicios.html">Servicios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="portafolio.html">Portafolio</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div><!-- termina row-->
+            </div><!-- termina container-->
+        </header>
+    </div><!-- termina cabeza-->
+
+    <!-- imagen de intro -->
+    <section class="imgCabezal--portafolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="titulos--blanco">Portafolio</h1>
+                </div>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+    </section>
+
+    <div class="container separar">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo.jpg" /><br>
                     <h3 class="trabajo__tit">Trabajo 1</h3>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type and scrambled it to make a type specimen book.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
-                <article class="trabajo">
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo2.jpg" /><br>
-                    <h3 class="trabajo__tit">Trabajo 2
-                    </h3>
+                    <h3 class="trabajo__tit">Trabajo 2</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
-                <article class="trabajo">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo3.jpg" /><br>
                     <h3 class="trabajo__tit">Trabajo 3</h3>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type and scrambled it to make a type specimen book.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
             </div>
-    
-    
-            <div class="trabajos">
-                <article class="trabajo">
+        </div><!-- termina row -->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo.jpg" /><br>
                     <h3 class="trabajo__tit">Trabajo 4</h3>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type and scrambled it to make a type specimen book.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
-                <article class="trabajo">
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo2.jpg" /><br>
-                    <h3 class="trabajo__tit">Trabajo 5
-                    </h3>
+                    <h3 class="trabajo__tit">Trabajo 5</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        It has survived not only five centuries, but also
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
-                <article class="trabajo">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="trabajo separar2">
                     <img class="trabajo__img aplicarPulso" src="../assets/img/trabajo3.jpg" /><br>
                     <h3 class="trabajo__tit">Trabajo 6</h3>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                        type
-                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                        the
-                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                        1960s
-                        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                        desktop
-                        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of
+                        type and scrambled it to make a type specimen book.
                     </p>
-                    <a class="btn-verMas" href="#" target="_self">Ver más</a>
+                    <a class="btn-verMas animable" href="#" target="_self">Ver más</a>
                 </article>
             </div>
-    
-    
-        </section>
-    
-    </div>
-    
-    <div class="pie">
-        <footer>
-            <div id="footer__logo"><img src="../assets/img/logo.png" /></div>
-            <div>FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de privacidad</a></div>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <img class="red" src="../assets/img/red1.png" />
-                        </td>
-                        <td>
-                            <img class="red" src="../assets/img/red2.png" />
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </footer>
-    </div>
+        </div><!-- termina row -->
 
+    </div><!-- termina container-->
+
+    <footer class="separar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="footer__logo"><img src="../assets/img/logo.png" /></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 centrado">
+                    <div id="legales">FRACTALES 2022 v.1.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#">Politicas de
+                            privacidad</a></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 centrado">
+                    <table id="tablaRedes">
+                        <tr>
+                            <td>
+                                <img class="red" src="../assets/img/red1.png" />
+                            </td>
+                            <td>
+                                <img class="red" src="../assets/img/red2.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!-- termina row -->
+        </div><!-- termina container-->
+    </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
