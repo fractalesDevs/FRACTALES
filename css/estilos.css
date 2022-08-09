@@ -83,7 +83,7 @@ body {
 
 .btn-verMas {
     padding: 3% 4%;
-    width: 100%;
+    width: 90%;
     background-color: #516ba5;
     display: inline-block;
     border-radius: 10px;
@@ -91,6 +91,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn-verMas--index {
@@ -186,7 +187,7 @@ body {
     border-radius: 15px;
     display: inline-block;
     margin-top: 30px;
-    width: 65%;
+    width: 45%;
 }
 footer {
     background-color: #03142b;
@@ -477,12 +478,48 @@ footer a {
         width: 60px;
         height: auto;
     }
+    .nav-item {
+        color: #ffffff;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
 }
 
 /* ////////////////// AJUSTE DE TAMAÑO 3 /////////////////// */
 @media screen and (max-width: 600px) {
     .clientes__art{
         margin: 2% auto;
+    }
+    .btn-verMas--index {
+        padding: 3% 4%;
+        width: 80%;
+        background-color: #516ba5;
+        display: inline-block;
+        border-radius: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .servicios__recServicio {
+        width: 80%;
+        margin: 20px auto;
+        padding: 1% 2% 6% 2%;
+    }
+    .nav-item {
+        color: #ffffff;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        text-align: center;
     }
 }
 
