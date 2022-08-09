@@ -1,0 +1,296 @@
+
+
+
+/*   ////// SECCION QUIENES SOMOS //////////*/
+.imgCabezal {
+    background-image: url("../assets/img/img_02.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+
+.cuerpo-cont {
+    width: 100%;
+    padding: 3%;
+    margin: 2% auto;
+}
+/* Página de Servicios */
+.imgCabezal--servicios {
+    background-image: url("../assets/img/img_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+.service {
+    margin-top: 7%;
+}
+.service p {
+    padding: 0% 5%;
+    text-align: left;
+}
+.titServicio {
+    font-size: 35px;
+    color: #5778b1;
+    padding: 0% 5%;
+}
+/* Página de Portafolio */
+.imgCabezal--portafolio {
+    background-image: url("../assets/img/img_04.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+.separar {
+    margin-top: 4%;
+}
+.separar2 {
+    padding-top: 10%;
+}
+.trabajos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.trabajo {
+    width: 90%;
+    margin: 0 auto;
+}
+.trabajo__img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.trabajo__tit {
+    color: #74abd6;
+    font-size: 25px;
+}
+/*  ////////////Página de Contacto  /////////*/
+.imgCabezal--contacto {
+    background-image: url("../assets/img/img_05.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+.desc-contacto {
+    color: #74abd6;
+    font-size: 25px;
+}
+
+.contacto__form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contacto__formulario {
+    width: 100%;
+}
+
+#contacto__formulario .contacto__texto {
+    width: 100%;
+    padding: 2%;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.contacto__sexo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contacto__formulario select {
+    width: 100%;
+    padding: 2%;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.contacto__check {
+    width: auto;
+    padding: 2%;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+}
+
+#contacto__formulario .contacto__btn {
+    width: 45%;
+    margin: 0 auto;
+    padding: 2%;
+    border-radius: 15px;
+    background-color: #5778b1;
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+#contacto__formulario label {
+    width: 100%;
+}
+
+#contacto__btns {
+    width: 100%;
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*///// CSS para animaciones- trancisiones y gradientes /////////*/
+.animable {
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+}
+
+#btn-conocenos:hover {
+    padding: 1% 6%;
+    width: 25%;
+    background-color: #0d1f45;
+    color: #ffffff;
+}
+
+.btn-verMas:hover {
+    padding: 4% 5%;
+    width: 100%;
+    background-color: #14264b;
+}
+
+#cotizar__link:hover {
+    color: #000000;
+    background-color: #2eb9ff;
+    padding: 2% 6%;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.aplicarPulso {
+    animation-name: pulso;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+
+
+/* ////////////////// AJUSTE DE TAMAÑO 1 /////////////////// */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 1% 0%;
+    }
+
+    .nav-item {
+        color: #ffffff;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        text-align: center;
+    }
+}
+
+/* ////////////////// AJUSTE DE TAMAÑO 2 /////////////////// */
+@media screen and (max-width: 768px) {
+    .clientes__art{
+        margin: 2% auto;
+    }
+
+    footer {
+        padding: 7% 10%;
+    }
+    #footer__logo {
+        width: 25%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #footer__logo img {
+        width: 100%;
+        height: auto;
+    }
+    #tablaRedes {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #legales {
+        display: block;
+        height: auto;
+        margin: 8% auto;
+    }
+    .red {
+        width: 60px;
+        height: auto;
+    }
+    .nav-item {
+        color: #ffffff;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
+}
+
+/* ////////////////// AJUSTE DE TAMAÑO 3 /////////////////// */
+@media screen and (max-width: 600px) {
+    .clientes__art{
+        margin: 2% auto;
+    }
+    .btn-verMas--index {
+        padding: 3% 4%;
+        width: 80%;
+        background-color: #516ba5;
+        display: inline-block;
+        border-radius: 10px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .servicios__recServicio {
+        width: 80%;
+        margin: 20px auto;
+        padding: 1% 2% 6% 2%;
+    }
+    .nav-item {
+        color: #ffffff;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        text-align: center;
+    }
+}
+

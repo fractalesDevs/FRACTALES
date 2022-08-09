@@ -1,0 +1,84 @@
+/*  ////////////Página de Contacto  /////////*/
+.imgCabezal--contacto {
+    background-image: url("../assets/img/img_05.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+.desc-contacto {
+    color: $azulMuyClaro;
+    font-size: 25px;
+}
+
+.contacto__form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contacto__formulario {
+    width: 100%;
+
+     .contacto__texto {
+        width: 100%;
+        padding: 2%;
+        border: none;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+     select {
+        width: 100%;
+        padding: 2%;
+        border: none;
+        box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    .contacto__btn {
+        width: 45%;
+        margin: 0 auto;
+        padding: 2%;
+        border-radius: 15px;
+        background-color: #5778b1;
+        border: none;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    label {
+        width: 100%;
+    }
+
+}
+
+.contacto__sexo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacto__check {
+    width: auto;
+    padding: 2%;
+    border: none;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+}
+
+
+
+#contacto__btns {
+    width: 100%;
+    padding: 2%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+/* Página de Servicios */
+.imgCabezal--servicios {
+    background-image: url("../assets/img/img_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3%;
+    text-align: center;
+}
+.service {
+    margin-top: 7%;
+
+     p {
+        padding: 0% 5%;
+        text-align: left;
+    }
+}
+
+.titServicio {
+    font-size: 35px;
+    color:$azulClaro;
+    padding: 0% 5%;
+}

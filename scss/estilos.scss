@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$blanco:#ffffff;
+$negro:#000000;
+$azulClaro:#516ba5;
+$grisClaro:#dddddd;
+$azulOscuro:#172a67;
+$azulMuyOscuro:#03142b;
+$grisMedio:#6a6a6a;
+$azulMuyClaro:#74abd6;
+$azulBrillante:#2eb9ff;
+
+.titulos {
+    font-size: 45px;
+    color: $grisMedio;
+    text-align: center;
+}
+
+.titulos--blanco {
+    font-size: 45px;
+    color: $blanco;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000000;
+}
+
+@import "cabeza";
+@import "inicio";
+@import "footer";
+@import "quienes";
+@import "servicios";
+@import "portafolio";
+@import "contacto";
+@import "animaciones";
+@import "ajustesResponsivo";

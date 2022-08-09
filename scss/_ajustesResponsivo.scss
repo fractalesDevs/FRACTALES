@@ -1,0 +1,102 @@
+/* ////////////////// AJUSTE DE TAMAÑO 1 /////////////////// */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 1% 0%;
+
+        .nav-item {
+            color: $blanco;
+        }
+
+        .nav-link {
+            color: $blanco !important;
+            text-align: center;
+        }
+    } 
+}
+
+/* ////////////////// AJUSTE DE TAMAÑO 2 /////////////////// */
+@media screen and (max-width: 768px) {
+    .clientes__art{
+        margin: 2% auto;
+    }
+
+    footer {
+        padding: 7% 10%;
+
+        #footer__logo {
+            width: 25%;
+            margin: 0 auto;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+    }
+    
+    
+    #tablaRedes {
+        width: 80%;
+        margin: 0 auto;
+
+        .red {
+            width: 60px;
+            height: auto;
+        }
+    }
+    #legales {
+        display: block;
+        height: auto;
+        margin: 8% auto;
+    }
+   
+    .nav-item {
+        color:$blanco;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+    }
+}
+
+/* ////////////////// AJUSTE DE TAMAÑO 3 /////////////////// */
+@media screen and (max-width: 600px) {
+    .clientes__art{
+        margin: 2% auto;
+    }
+    .btn-verMas--index {
+        padding: 3% 4%;
+        width: 80%;
+        background-color: $azulClaro;
+        display: inline-block;
+        border-radius: 10px;
+        color: $blanco;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .servicios__recServicio {
+        width: 80%;
+        margin: 20px auto;
+        padding: 1% 2% 6% 2%;
+    }
+    .nav-item {
+        color: $blanco;
+        padding: 5% 3%;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+
+        .nav-link {
+            color: $blanco !important;
+            text-align: center;
+        }
+    }
+
+    
+}
+

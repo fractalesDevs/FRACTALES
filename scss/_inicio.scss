@@ -1,0 +1,145 @@
+/*  Seccion de Quienes somos  */
+
+/* Variables en SASS (no se verán en css) */
+
+
+.somos {
+    background-image: url("../assets/img/img_01.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 3% 7% 8%;
+    text-align: center;
+    .somos__titulo {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 15px;
+        color: $blanco;
+        text-shadow: 0px 0px 5px $negro;
+    }
+    .somos__desc {
+        color: $blanco;
+        font-size: 1.5rem;
+        text-shadow: 0px 0px 5px $negro;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+
+.btn-verMas {
+    padding: 3% 4%;
+    width: 90%;
+    background-color:$azulClaro;
+    display: inline-block;
+    border-radius: 10px;
+    color: $blanco;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+
+.btn-verMas--index {
+    padding: 1% 4%;
+    width: 40%;
+    background-color: $azulClaro;
+    display: inline-block;
+    border-radius: 10px;
+    color: $blanco;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 50px auto 20px auto;
+}
+
+.videoResponsivo {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16/9 ratio */
+    padding-top: 30px;
+    /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.videoResponsivo iframe,
+.videoResponsivo object,
+.videoResponsivo embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#tituloReel {
+    text-align: left;
+}
+
+.reel {
+    padding: 3% auto;
+    margin: 3% auto;
+}
+
+.al-centro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#servicios {
+    background-color: $grisClaro;
+    padding: 2% 0%;
+}
+
+.servicios__recServicio {
+    width: 100%;
+    background-color:$blanco;
+    padding: 1% 2% 3% 2%;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px 0px;
+
+    .servicios__recServicio h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+#clientes__cont {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#clientes {
+    padding: 2% 4%;
+}
+
+.clientes__art{
+    margin: 0;
+}
+
+.centrado{
+    text-align: center;
+}
+#cotizar {
+    background-color:$azulClaro;
+    color:$blanco;
+    padding: 4% 4%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+
+    #cotizar__link {
+        color: $blanco;
+        text-decoration: none;
+        background-color:$azulOscuro;
+        padding: 1% 4%;
+        border-radius: 15px;
+        display: inline-block;
+        margin-top: 30px;
+        width: 45%;
+    }
+
+}

@@ -1,0 +1,55 @@
+footer {
+    background-color: $azulMuyOscuro;
+    color:$blanco;
+    padding: 2% 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    #footer__logo {
+        width: 40%;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+    
+
+    a {
+        color: $blanco;
+        text-decoration: none;
+    }
+
+    #tablaRedes {
+        width: 80%;
+        margin: 0 auto;
+
+        .red {
+            width: 60px;
+            height: auto;
+        }
+    }
+
+    #legales {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+

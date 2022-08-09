@@ -1,0 +1,44 @@
+/*///// CSS para animaciones- trancisiones y gradientes /////////*/
+.animable {
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+}
+
+#btn-conocenos:hover {
+    padding: 1% 6%;
+    width: 25%;
+    background-color:$azulOscuro;
+    color: $blanco;
+}
+
+.btn-verMas:hover {
+    padding: 4% 5%;
+    width: 100%;
+    background-color: $azulOscuro;
+}
+
+#cotizar__link:hover {
+    color: #000000;
+    background-color:$azulBrillante;
+    padding: 2% 6%;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.05, 1.05);
+    }
+}
+
+.aplicarPulso {
+    animation-name: pulso;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
